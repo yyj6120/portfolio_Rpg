@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a352abd22fcbc74d91e7570f52d00dc, type: 3}
+  m_Name: defaultSurface
+  m_EditorClassIdentifier: 
+  soundPool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114530270949926570, guid: e62da80248e2bf84c896ed8dde948cf6,
+          type: 2}
+        m_MethodName: TriggerStepSound
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Rpg.Character.AudioSurface+PlayRandomClipPool, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  audioSource: {fileID: 82668158561405724, guid: 7484807caba59f14093aebbef375b0b6,
+    type: 2}
+  audioMixerGroup: {fileID: 243989090004871364, guid: 167050cef855a84408a714f57bbff589,
+    type: 2}
+  TextureOrMaterialNames: []
+  audioClips:
+  - {fileID: 8300000, guid: 229c64ed39310624c9aada3d771c7b06, type: 3}
+  - {fileID: 8300000, guid: 1f866668884214b4db7140d25b0def17, type: 3}
+  - {fileID: 8300000, guid: e5ae416f49602c1409e7c0d85ae0215c, type: 3}
+  - {fileID: 8300000, guid: 169f75c2c9f5fae4c9147639256eb0c8, type: 3}
+  - {fileID: 8300000, guid: 375af61fe5c06774084832c408e31683, type: 3}
