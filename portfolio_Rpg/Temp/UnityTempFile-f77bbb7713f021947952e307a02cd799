@@ -1,0 +1,294 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp\Assembly-CSharp.dll
+-unsafe
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_1_1
+-define:UNITY_2017_1
+-define:UNITY_2017
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_RUNTIME_NAVMESH_BUILDING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+Assets/Camera/CullingFadeControl/vCullingFadeControl.cs
+"Assets/Camera/Easy Outline/Behaviours/OutlineSystem.cs"
+"Assets/Camera/Easy Outline/Demo Scene/Behaviours/DemoBehaviour.cs"
+Assets/Camera/LockOn/vLockOnTarget.cs
+Assets/Camera/LockOn/vLockOnTargetControl.cs
+Assets/Camera/vThirdPersonCamera.cs
+Assets/Camera/vThirdPersonCameraListData.cs
+Assets/Camera/vThirdPersonCameraState.cs
+Assets/CharacterAI/v_AIAnimator.cs
+Assets/CharacterAI/v_AICompanion.cs
+Assets/CharacterAI/v_AIController.cs
+Assets/CharacterAI/v_AIMotor.cs
+Assets/CharacterAI/v_AISphereSensor.cs
+Assets/CharacterAI/v_AIWeaponsControl.cs
+Assets/Damage/DamageHelper.cs
+Assets/Damage/ObjectDamage.cs
+Assets/Item/Script/EquipArea.cs
+Assets/Item/Script/EquipAreaControl.cs
+Assets/Item/Script/EquipmentDisplay.cs
+Assets/Item/Script/EquipSlot.cs
+Assets/Item/Script/IEquipment.cs
+Assets/Item/Script/Inventory.cs
+Assets/Item/Script/InventoryWindow.cs
+Assets/Item/Script/Item.cs
+Assets/Item/Script/ItemAmountWindow.cs
+Assets/Item/Script/ItemAttribute.cs
+Assets/Item/Script/ItemCollection.cs
+Assets/Item/Script/ItemEnum.cs
+Assets/Item/Script/ItemEnumsList.cs
+Assets/Item/Script/ItemListData.cs
+Assets/Item/Script/ItemManager.cs
+Assets/Item/Script/ItemManagerEvent.cs
+Assets/Item/Script/ItemOptionWindow.cs
+Assets/Item/Script/ItemSlot.cs
+Assets/Item/Script/ItemWindow.cs
+Assets/Item/Script/ItemWindowDisplay.cs
+Assets/Item/Script/LookatCamera.cs
+Assets/Item/Script/RewardWindow.cs
+Assets/Item/Script/RotateObject.cs
+Assets/Item/Script/SetFirstSelectable.cs
+Assets/Item/Script/WindowPop_up.cs
+Assets/Melee/EnumFlagAttribute.cs
+Assets/Melee/HitBox.cs
+Assets/Melee/HitEffects.cs
+Assets/Melee/IMeleeFighter.cs
+Assets/Melee/MeleeAttackObject.cs
+Assets/Melee/MeleeManager.cs
+Assets/Melee/MeleeWeapon.cs
+Assets/Melee/WaypointSystem/Point.cs
+Assets/Melee/WaypointSystem/Waypoint.cs
+Assets/Melee/WaypointSystem/WaypointArea.cs
+Assets/ObjectPool/ObjectPoolManager.cs
+Assets/ObjectPool/topDownCursor/TopDownCursor.cs
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/BlurEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/ColorCorrectionEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/ContrastStretchEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/EdgeDetectEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/GrayscaleEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/ImageEffectBase.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/ImageEffects.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/MotionBlur.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/NoiseEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/SepiaToneEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/SSAOEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/TwirlEffect.cs"
+"Assets/Rpg/Map/Demo/Demo10/Standard Assets/Image Effects (Pro Only)/VortexEffect.cs"
+Assets/Rpg/Script/AudioSurface/AudioSurface.cs
+Assets/Rpg/Script/AudioSurface/AudioSurfaceControl.cs
+Assets/Rpg/Script/Character/Action/ActionListener.cs
+Assets/Rpg/Script/Character/Action/GenericWarriorAction.cs
+Assets/Rpg/Script/Character/Action/TriggerGenericAction.cs
+Assets/Rpg/Script/Character/Character.cs
+Assets/Rpg/Script/Character/CharacterAnimator.cs
+Assets/Rpg/Script/Character/CharacterMotor.cs
+Assets/Rpg/Script/Character/FootStep/FootPlantingPlayer.cs
+Assets/Rpg/Script/Character/FootStep/FootStepFromTexture.cs
+Assets/Rpg/Script/Character/FootStep/FootStepTrigger.cs
+Assets/Rpg/Script/Character/FootStep/InstantiateStepMark.cs
+Assets/Rpg/Script/Character/HDU/HUDController.cs
+Assets/Rpg/Script/Character/HDU/SliderSizeControl.cs
+Assets/Rpg/Script/Character/HeadTrack/HeadTrack.cs
+Assets/Rpg/Script/Character/HeadTrack/HeadTrackSensor.cs
+Assets/Rpg/Script/Character/HeadTrack/LookTarget.cs
+Assets/Rpg/Script/Character/OnDeadTrigger.cs
+Assets/Rpg/Script/Character/PlayInput/ArcherInput.cs
+Assets/Rpg/Script/Character/PlayInput/InputControl.cs
+Assets/Rpg/Script/Character/PlayInput/MagicionInput.cs
+Assets/Rpg/Script/Character/PlayInput/MeleeCombatInput.cs
+Assets/Rpg/Script/Character/PlayInput/ThirdPersonInput.cs
+Assets/Rpg/Script/Character/PlayInput/WarriorInput.cs
+Assets/Rpg/Script/Character/ThirdPersonController.cs
+Assets/Rpg/Script/Character/WarriorInterface/FiveCombo.cs
+Assets/Rpg/Script/Character/WarriorInterface/HeavySmash.cs
+Assets/Rpg/Script/Character/WarriorInterface/JumpSwing.cs
+Assets/Rpg/Script/Character/WarriorInterface/SlashCombo.cs
+Assets/Rpg/Script/Character/WarriorInterface/TurnJumpSmash.cs
+Assets/Rpg/Script/Character/WarriorInterface/TurnJumpSwing.cs
+Assets/Rpg/Script/Effect/DamageText.cs
+Assets/Rpg/Script/Effect/MoveEndEffect.cs
+Assets/Rpg/Script/etc/EquipmentSlotKey.cs
+Assets/Rpg/Script/etc/ItemSlotKey.cs
+Assets/Rpg/Script/etc/PagingScrollViewController.cs
+Assets/Rpg/Script/etc/ViewController.cs
+Assets/Rpg/Script/Generic/ClassHeaderAttribute.cs
+Assets/Rpg/Script/Generic/DestroyGameObject.cs
+Assets/Rpg/Script/Generic/Extensions.cs
+Assets/Rpg/Script/Generic/FisherYatesRandom.cs
+Assets/Rpg/Script/Generic/Handler.cs
+Assets/Rpg/Script/Generic/HitDamageParticle.cs
+Assets/Rpg/Script/Generic/MeleeAttackControl.cs
+Assets/Rpg/Script/Generic/SpriteHealth.cs
+Assets/Rpg/Script/Generic/TriggerSoundByState.cs
+Assets/Rpg/Script/LoadScene/LoadScene.cs
+Assets/Rpg/Script/Ragdoll/Ragdoll.cs
+Assets/Rpg/Script/Ragdoll/RagdollCollision.cs
+Assets/Rpg/Script/UI_Control/Content/CharacterSelectControl/ArcherButton.cs
+Assets/Rpg/Script/UI_Control/Content/CharacterSelectControl/ClassButtonControl.cs
+Assets/Rpg/Script/UI_Control/Content/CharacterSelectControl/MagicionButton.cs
+Assets/Rpg/Script/UI_Control/Content/CharacterSelectControl/WarriorButton.cs
+Assets/Rpg/Script/UI_Control/ContentControl/BaseEquipMentContent.cs
+Assets/Rpg/Script/UI_Control/ContentControl/ClassSelectContent.cs
+Assets/Rpg/Script/UI_Control/ContentControl/ContentControl.cs
+Assets/Rpg/Script/UI_Control/ContentControl/NameSettingContent.cs
+Assets/Rpg/Script/Utill/CustomObjectPool.cs
+Assets/Rpg/Script/vMonoBehaviour.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Attributes/HeaderLineAttribute.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Attributes/TagAttribute.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/CallbackEventData.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/CallbackHandler.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/CoroutineQueue.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/DebugFilter.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/DontDestroyOnLoad.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/EventHandler.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/IJsonSerializable.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Interfaces/INameable.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/JsonSerializer.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/LookAtMainCamera.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/MiniJSON.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/ObjectProperty.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/PropertyBinding.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Utility/TypeUtility.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Utility/UnityUtility.cs
+Assets/Rpg/Unitycoding/Shared/Scripts/Runtime/Utility/WindowsRuntimeExtension.cs
+"Assets/Rpg/Unitycoding/UI Widgets/Example/Scripts/MessageBoxExample.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Example/Scripts/MessageContainerExample.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/AddMessage.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/ClearContainer.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/Close.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/Focus.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/GetWidget.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/RemoveMessage.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/SetProgress.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/Show.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/ShowMessageBox.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Integrations/ICode/Actions/Toggle.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Chat.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/DragPanel.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Friends/FriendContainer.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Friends/FriendInfo.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Friends/FriendSlot.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/IValidation.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Joystick.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/KeyTrigger.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/MessageBox.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/MessageContainer.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/MessageOptions.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/MessageSlot.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Progressbar.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/RadialMenu.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/RadialMenuItem.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/RadialMenuTrigger.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/ResizePanel.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Spinner.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tab.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tooltip.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/TooltipTrigger.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tween/EasingEquations.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tween/FloatTween.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tween/ITweenValue.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tween/TweenRunner.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/Tween/Vector3Tween.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/UIContainer.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/UICursor.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/UISlot.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/UIUtility.cs"
+"Assets/Rpg/Unitycoding/UI Widgets/Scripts/Runtime/UIWidget.cs"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

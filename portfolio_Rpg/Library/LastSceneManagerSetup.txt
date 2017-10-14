@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Rpg/Scene/Rpg_combat.unity
+- path: Assets/Rpg/Scene/Rpg_combat2.unity
   isLoaded: 1
   isActive: 1

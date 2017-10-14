@@ -75,8 +75,14 @@ namespace Rpg.Character
             return false;
         }
 
+        //public void OnStateEnter()
+        //{
+
+        //}
+
         public void LayerControl()
         {
+            
             baseLayerInfo = animator.GetCurrentAnimatorStateInfo(baseLayer);
             fullBodyInfo = animator.GetCurrentAnimatorStateInfo(fullbodyLayer);
         }

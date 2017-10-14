@@ -14,6 +14,7 @@ public class HitBox : MonoBehaviour
     public vHitBoxType triggerType = vHitBoxType.Damage | vHitBoxType.Recoil;
 
     private bool canHit;
+
     void OnDrawGizmos()
     {
         trigger = GetComponent<Collider>();

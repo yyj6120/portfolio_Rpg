@@ -75,7 +75,6 @@ namespace Rpg.Item
             {
                 DontDestroyOnLoad(gameObject);
             }
-            //vGameController.instance.OnReloadGame.AddListener(OnReloadGame);
         }
 
         public void OnReloadGame()
@@ -94,11 +93,6 @@ namespace Rpg.Item
                 {
                     foreach (EquipSlot slot in changeEquip.equipArea.equipSlots)
                     {
-                        //if (slot.item != null && items.Find(i => i.id == slot.item.id) != null)
-                        //{
-                        //    EquipItem(changeEquip.equipArea, slot.item);
-                        //}
-                        //else 
                         if (changeEquip.equipArea.currentEquipedItem == null)
                         {
                             UnequipItem(changeEquip.equipArea, slot.item);
@@ -123,7 +117,6 @@ namespace Rpg.Item
                 ChangeEquipmentInput();
             else
             {
-                UpdateEventSystemInput();
                 RemoveEquipmentInput();
             }
         }
@@ -149,7 +142,8 @@ namespace Rpg.Item
                     Time.timeScale = 1;
                 }
             }
-            if (!isOpen) return;
+            if (!isOpen)
+                return;
             // disable current window
             if ((windows.Count > 0 && windows[windows.Count - 1] != firstWindow) && cancel.GetButtonDown())
             {
@@ -264,21 +258,6 @@ namespace Rpg.Item
 
         }
 
-        void UpdateEventSystemInput()
-        {
-            //if (inputModule)
-            //{
-            //    inputModule.horizontalAxis = horizontal.buttonName;
-            //    inputModule.verticalAxis = vertical.buttonName;
-            //    inputModule.submitButton = submit.buttonName;
-            //    inputModule.cancelButton = cancel.buttonName;
-            //}
-            //else
-            //{
-            //    inputModule = FindObjectOfType<StandaloneInputModule>();
-            //}
-        }
-
         void UseItemInput(ChangeEquipmentControl changeEquip)
         {
             if (changeEquip.display != null && changeEquip.display.item != null && changeEquip.display.item.type == ItemType.Consumable)
@@ -348,7 +327,6 @@ namespace Rpg.Item
                     if (removeItem && changeEquipControl.display.item == item)
                     {
                         changeEquipControl.display.RemoveItem();
-                        //changeEquipControl.display.ItemIdentifier();
                     }
                     else if (equipArea.currentEquipedItem == item)
                     {

@@ -188,8 +188,13 @@ namespace Rpg.Character
 
         protected virtual void InputHandle()
         {
-            MoveCharacter();
-            JumpInput();
+            ExitGameInput();
+
+            if(!character.lockMovement && !character.ragdolled)
+            {
+                MoveCharacter();
+                JumpInput();
+            }
         }
 
         protected virtual void MoveCharacter()
@@ -270,6 +275,18 @@ namespace Rpg.Character
             if (jumpInput.GetButtonDown())
             {
                 character.Jump();
+            }
+        }
+
+        protected virtual void ExitGameInput()
+        {
+            // just a example to quit the application 
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (!Cursor.visible)
+                    Cursor.visible = true;
+                else
+                    Application.Quit();
             }
         }
 

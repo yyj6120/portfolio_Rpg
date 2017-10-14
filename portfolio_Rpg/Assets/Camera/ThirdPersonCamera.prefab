@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 81675870085161210}
   - component: {fileID: 114810431904610134}
   - component: {fileID: 114870689461437196}
+  - component: {fileID: 114526552290163788}
   m_Layer: 0
   m_Name: ThirdPersonCamera
   m_TagString: MainCamera
@@ -95,6 +96,30 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1271080096301920}
   m_Enabled: 1
+--- !u!114 &114526552290163788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271080096301920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4981aa8004d05a48bcd7dc3775e8255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solidOutline: 0
+  outlineStrength: 1
+  outlineLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  outlineColor: {r: 0, g: 0, b: 0, a: 0}
+  downsampleAmount: 2
+  outlineSize: 1.5
+  outlineIterations: 2
+  outlineUpscale: 1
+  mainCamera: {fileID: 20241490919302728}
+  blurMaterial: {fileID: 2100000, guid: f6b8c14e6b3937d43b6945aeecef73e1, type: 2}
+  outlineMaterial: {fileID: 2100000, guid: 3ddfbf5f81013484b91a27e48b878e37, type: 2}
 --- !u!114 &114810431904610134
 MonoBehaviour:
   m_ObjectHideFlags: 1

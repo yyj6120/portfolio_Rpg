@@ -320,6 +320,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  OffDoAction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   OnPlayerEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -335,11 +340,16 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  onSoundDelay: 0
   onCollectDelay: 0
   immediate: 0
   itemListData: {fileID: 11400000, guid: 939455fc20e18ee4a9dfc1b9a13f33a8, type: 2}
   itemsFilter: 00000000
   items: []
+  rewardWindow: {fileID: 0}
+  currentRewardWindow: {fileID: 0}
+  audioSource: {fileID: 0}
+  audioClips: []
 --- !u!114 &114995522847210294
 MonoBehaviour:
   m_ObjectHideFlags: 1
