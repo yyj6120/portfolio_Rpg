@@ -26,6 +26,7 @@ namespace Rpg.Item
 
         [Header("Input Mapping")]
         public GenericInput openInventory = new GenericInput("I", "Start", "Start");
+        public GenericInput myEquipment = new GenericInput("C");
         public GenericInput removeEquipment = new GenericInput("R", "X", "X");
         [Header("This fields will override the EventSystem Input")]
         public GenericInput horizontal = new GenericInput("Horizontal", "D-Pad Horizontal", "Horizontal");
@@ -59,7 +60,12 @@ namespace Rpg.Item
         }
 
         #endregion
-
+        /// <summary>
+        /// 이니셜라이즈 :
+        /// 각 장비목록을 받아온후 EquipItem(착용) 메소드 , UnequipItem(헤제) 메소드
+        /// 를 추가시킵니다.
+        /// 해당 오브젝트는 DontDestroyOnLoad()...
+        /// </summary>
         void Start()
         {
             canEquip = true;
@@ -71,6 +77,7 @@ namespace Rpg.Item
                 equipArea.onEquipItem.AddListener(EquipItem);
                 equipArea.onUnequipItem.AddListener(UnequipItem);
             }
+
             if (dontDestroyOnLoad)
             {
                 DontDestroyOnLoad(gameObject);
@@ -203,7 +210,8 @@ namespace Rpg.Item
         }
 
         /// <summary>
-        /// Input for change equiped Item
+        /// 아이템 장비를 바꿔즈는 메소드입니다.
+        /// Swap기능
         /// </summary>
         void ChangeEquipmentInput()
         {
@@ -343,8 +351,8 @@ namespace Rpg.Item
     public class ChangeEquipmentControl
     {
         public GenericInput useItemInput = new GenericInput("U", "Start", "Start");
-        public GenericInput previousItemInput = new GenericInput("LeftArrow", "D - Pad Horizontal", "D-Pad Horizontal");
-        public GenericInput nextItemInput = new GenericInput("RightArrow", "D - Pad Horizontal", "D-Pad Horizontal");
+        public GenericInput previousItemInput = new GenericInput("N", "D - Pad Horizontal", "D-Pad Horizontal");
+        public GenericInput nextItemInput = new GenericInput("B", "D - Pad Horizontal", "D-Pad Horizontal");
         public EquipArea equipArea;
         public EquipmentDisplay display;
     }

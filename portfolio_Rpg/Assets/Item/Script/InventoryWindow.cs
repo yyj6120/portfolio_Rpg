@@ -16,7 +16,13 @@ namespace Rpg.Item
 
         public bool IsOpen
         {
-            get { if (pop_ups != null && pop_ups.Count > 0) return false; return isOpen; }
+            get
+            {
+                if (pop_ups != null && pop_ups.Count > 0)
+                    return false;
+
+                return isOpen;
+            }
         }
 
         void Start()
@@ -37,7 +43,10 @@ namespace Rpg.Item
                 inventory.SetCurrentWindow(this);
                 isOpen = true;
             }
-            catch { }
+            catch
+            {
+
+            }
         }
 
         void OnDisable()
@@ -88,7 +97,6 @@ namespace Rpg.Item
                     pop_ups.Remove(pop_up);
                     if (pop_up.gameObject.activeSelf)
                         pop_up.gameObject.SetActive(false);
-
                     //if (pop_ups.Count > 0)
                     //{
                     //    if (pop_ups[pop_ups.Count - 1]!=null &&!pop_ups[pop_ups.Count - 1].gameObject.activeSelf)
@@ -96,8 +104,10 @@ namespace Rpg.Item
                     //}
                 }
             }
-            catch { }
+            catch
+            {
 
+            }
         }
 
         public void RemoveLastPop_up()
