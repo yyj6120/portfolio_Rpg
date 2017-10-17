@@ -28,7 +28,8 @@ MonoBehaviour:
   m_Name: Axe_12
   m_EditorClassIdentifier: 
   id: 1
-  description: "\uC5BC\uC74C\uB3C4\uB07C...."
+  description: "\uBAA8\uB4E0 \uC801\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uC2E0\uBE44\uD55C\uB3C4\uB07C\uC785\uB2C8\uB2E4.\n\uB0B4\uC190\uC774
+    \uC5BC\uC9C0\uC54A\uB3C4\uB85D \uC870\uC2EC\uD558\uC2ED\uC624......."
   type: 1
   icon: {fileID: 21300000, guid: b329555c3469bc542b769680760c0cda, type: 3}
   stackable: 0
@@ -58,7 +59,8 @@ MonoBehaviour:
   m_Name: Axe_3
   m_EditorClassIdentifier: 
   id: 0
-  description: FireAxe
+  description: "\uC6A9\uAD11\uB85C\uC5D0\uC11C \uBC14\uB85C \uBF51\uC544\uB0B8 \uB3C4\uB07C\uC785\uB2C8\uB2E4.\n\uC801\uC744
+    \uBD88\uD0DC\uC6CC\uBC84\uB9BD\uB2C8\uB2E4.."
   type: 1
   icon: {fileID: 21300000, guid: ae0b309839ce07741b0a4037c72a5929, type: 3}
   stackable: 0

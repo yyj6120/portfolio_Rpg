@@ -3,6 +3,7 @@ using System.Collections;
 using System.Text;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unitycoding.UIWidgets;
 
 namespace Rpg.Item
 {
@@ -10,7 +11,9 @@ namespace Rpg.Item
     {
         public Inventory inventory;
         public ItemWindow itemWindow;
-        public ItemOptionWindow optionWindow;
+        public Tooltip optionWindow;
+       // public RectTransform tooltipRect;
+        // public ItemOptionWindow optionWindow;
         [HideInInspector]
         public ItemSlot currentSelectedSlot;
         [HideInInspector]
@@ -30,10 +33,13 @@ namespace Rpg.Item
             currentSelectedSlot = slot;
             if (slot.item)
             {
-                var rect = slot.GetComponent<RectTransform>();
-                optionWindow.transform.position = rect.position;
+                optionWindow.icon.sprite = slot.item.icon;
+                optionWindow.text.text = slot.item.description;
+               // var rect = slot.GetComponent<RectTransform>();
+                //optionWindow
+                //optionWindow.transform.position = tru;
                 optionWindow.gameObject.SetActive(true);
-                optionWindow.EnableOptions(slot);
+             //   optionWindow.EnableOptions(slot);
                 currentSelectedSlot = slot;
             }
         }
