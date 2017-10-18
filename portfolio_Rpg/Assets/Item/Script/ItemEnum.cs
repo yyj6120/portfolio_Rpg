@@ -5,7 +5,14 @@
         Consumable = 0,
         MeleeWeapon = 1,
         Shooter = 2,
-        Ammo = 3
+        Ammo = 3,
+        DefenseHead = 4,
+        DefenseShield = 5,
+        DefenseHand = 6,
+        DefensePants = 7,
+        DefenseShoulders = 8,
+        DefenseChest = 9,
+        Accessory = 10
     }
 
     public enum ItemAttributes

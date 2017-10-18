@@ -11,8 +11,7 @@ namespace Rpg.Item
     {
         public Inventory inventory;
         public ItemWindow itemWindow;
-        public Tooltip optionWindow;
-       // public RectTransform tooltipRect;
+        public TooltipWindow tooltipWindow;
         // public ItemOptionWindow optionWindow;
         [HideInInspector]
         public ItemSlot currentSelectedSlot;
@@ -33,13 +32,12 @@ namespace Rpg.Item
             currentSelectedSlot = slot;
             if (slot.item)
             {
-                optionWindow.icon.sprite = slot.item.icon;
-                optionWindow.text.text = slot.item.description;
-               // var rect = slot.GetComponent<RectTransform>();
-                //optionWindow
-                //optionWindow.transform.position = tru;
-                optionWindow.gameObject.SetActive(true);
-             //   optionWindow.EnableOptions(slot);
+                tooltipWindow.icon.sprite = slot.item.icon;
+                tooltipWindow.tooltipDescription.text = slot.item.description;
+                tooltipWindow.gameObject.SetActive(true);
+                // //optionWindow.transform.position = tru;
+                // optionWindow.gameObject.SetActive(true);
+                //   optionWindow.EnableOptions(slot);
                 currentSelectedSlot = slot;
             }
         }

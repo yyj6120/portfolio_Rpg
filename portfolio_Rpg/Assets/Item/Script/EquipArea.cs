@@ -43,7 +43,6 @@ namespace Rpg.Item
                 slot.onSubmitSlotCallBack = OnSubmitSlot;
                 slot.onSelectSlotCallBack = OnSelectSlot;
                 slot.onDeselectSlotCallBack = OnDeselect;
-                slot.amountText.text = "";
             }
         }
 

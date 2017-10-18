@@ -14,7 +14,7 @@ namespace Rpg.Item
         public delegate List<Item> GetItemsDelegate();
         public GetItemsDelegate GetItemsHandler;
         public InventoryWindow firstWindow;
-
+        public InventoryWindow equipmentDisplayWindow;
         [Range(0, 1)]
         public float timeScaleWhileIsOpen = 0;
         public bool dontDestroyOnLoad = true;
@@ -26,7 +26,7 @@ namespace Rpg.Item
 
         [Header("Input Mapping")]
         public GenericInput openInventory = new GenericInput("I", "Start", "Start");
-        public GenericInput myEquipment = new GenericInput("C");
+        public GenericInput openEquipment = new GenericInput("C");
         public GenericInput removeEquipment = new GenericInput("R", "X", "X");
         [Header("This fields will override the EventSystem Input")]
         public GenericInput horizontal = new GenericInput("Horizontal", "D-Pad Horizontal", "Horizontal");
@@ -117,11 +117,15 @@ namespace Rpg.Item
 
         void LateUpdate()
         {
-            if (lockInput) return;
+            if (lockInput)
+                return;
+
             ControlWindowsInput();
 
             if (!isOpen)
+            {
                 ChangeEquipmentInput();
+            }
             else
             {
                 RemoveEquipmentInput();
@@ -131,6 +135,13 @@ namespace Rpg.Item
         void ControlWindowsInput()
         {
             // enable first window
+            if(openEquipment.GetButtonDown())
+            {
+                equipmentDisplayWindow.gameObject.SetActive(true);
+                isOpen = true;
+            }
+                
+
             if ((windows.Count == 0 || windows[windows.Count - 1] == firstWindow))
             {
                 if (!firstWindow.gameObject.activeSelf && openInventory.GetButtonDown())
@@ -140,7 +151,6 @@ namespace Rpg.Item
                     onOpenCloseInventory.Invoke(true);
                     Time.timeScale = timeScaleWhileIsOpen;
                 }
-
                 else if (firstWindow.gameObject.activeSelf && (openInventory.GetButtonDown() || cancel.GetButtonDown()))
                 {
                     firstWindow.gameObject.SetActive(false);
