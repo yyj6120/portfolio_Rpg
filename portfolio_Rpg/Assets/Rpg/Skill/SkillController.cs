@@ -9,10 +9,12 @@ namespace Rpg.Character
         [Header("ActionBar Inputs : To use it, you must set the string value in the editor.")]
         [SerializeField]
         public List<GenericInput> actionBarInput;
-        public ActionSlot[] actionSlot;
+        protected ActionSlot[] actionSlot;
+        protected ThirdPersonController character;
         public virtual void Init()
         {
             actionSlot = HUDController.instance.GetComponentsInChildren<ActionSlot>();
+            character = GetComponent<ThirdPersonController>();
         }
     }
 }

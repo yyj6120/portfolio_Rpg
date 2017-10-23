@@ -8,14 +8,21 @@ namespace Rpg.Character
     public class WariiorSkillController : SkillController
     {
         [System.Serializable]
-        public class OnSkill : UnityEvent<WarriorTypeSkill> { }
+        public class OnSkill : UnityEvent<SkillofWariior> { }
+        [HideInInspector]
         public OnSkill onSkill;
+
+        private void Start()
+        {
+            Init();
+        }
 
         public override void Init()
         {
             base.Init();
             onSkill.AddListener(Register);
         }
+
         private void LateUpdate()
         {
             InputActionBar();
@@ -24,25 +31,18 @@ namespace Rpg.Character
         protected virtual void InputActionBar()
         {
             for(int i = 0; i < actionSlot.Length; i++)
-            {
-                if(actionBarInput[i].GetButtonDown())
-                {
-                    onSkill.Invoke(actionSlot[i].skill.warriorTypeSkill);
-                }
-            }
+                if(actionBarInput[i].GetButtonDown() && actionSlot[i].skill != null)
+                    onSkill.Invoke(actionSlot[i].skill.skillofWariior);            
         }
 
-        public void Register(WarriorTypeSkill warriorTypeSkill)
+        public void Register(SkillofWariior skillofWariior)
         {
-            if(WarriorTypeSkill.test2 == warriorTypeSkill)
-            {
-                test2();
-            }
+            if (SkillofWariior.Rotarycut == skillofWariior) { Rotarycut(); }
         }
 
-        public void test2()
+        public void Rotarycut()
         {
-            Debug.Log(1);
+            character.animator.SetTrigger("Rotarycut");
         }
     }
 }

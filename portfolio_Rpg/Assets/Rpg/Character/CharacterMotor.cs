@@ -40,7 +40,7 @@ namespace Rpg.Character
         [HideInInspector]
         public PhysicMaterial frictionPhysics, maxFrictionPhysics, slippyPhysics;
         [HideInInspector]
-        public AnimatorStateInfo baseLayerInfo , fullBodyInfo;
+        public AnimatorStateInfo baseLayerInfo, fullBodyInfo;
         [SerializeField]
         protected float groundMinDistance = 0.2f;
         [SerializeField]
@@ -450,7 +450,7 @@ namespace Rpg.Character
 
         public virtual void CheckAttackDirection()
         {
-            if(AttackAction)
+            if (AttackAction)
             {
                 Vector3 lookDirection = attackDirection.normalized;
                 freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
@@ -592,7 +592,7 @@ namespace Rpg.Character
             lockMovement = true;
 
             animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
-    
+
             if (deathBy == DeathBy.Animation || deathBy == DeathBy.AnimationWithRagdoll)
                 animator.SetBool("isDead", true);
         }
@@ -651,7 +651,7 @@ namespace Rpg.Character
             {
                 var forward = keepDirection ? referenceTransform.forward : referenceTransform.TransformDirection(Vector3.forward);
                 forward.y = 0;
-            
+
                 forward = keepDirection ? forward : referenceTransform.TransformDirection(Vector3.forward);
                 forward.y = 0;
 

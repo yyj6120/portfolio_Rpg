@@ -41,8 +41,11 @@ public class MeleeAttackControl : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("stateInfo.normalizedTime" + stateInfo.normalizedTime);
         if (stateInfo.normalizedTime % 1 >= startDamage && stateInfo.normalizedTime % 1 <= endDamage && !isActive)
         {
+            Debug.Log("stateInfo.normalizedTime" + stateInfo.normalizedTime);
+
             if (debug)
                 Debug.Log(animator.name + " attack " + attackName + " enable damage in " + System.Math.Round(stateInfo.normalizedTime % 1, 2));
             isActive = true;

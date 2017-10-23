@@ -31,7 +31,6 @@ namespace Rpg.Character
 
         [Header("MeleeCombat Inputs")]
         public GenericInput weakAttackInput = new GenericInput("Fire2", "RB", "RB");
-        public GenericInput strongAttackInput = new GenericInput("Alpha1", false, "RT", true, "RT", false);
         public GenericInput blockInput = new GenericInput("Mouse1", "LB", "LB");
         public bool strafeWhileLockOn = true;
         public GenericInput lockOnInput = new GenericInput("Tab", "RightStickClick", "RightStickClick");
@@ -71,7 +70,6 @@ namespace Rpg.Character
             if (MeleeAttackConditions && !lockInputByItemManager)
             {
                 MeleeWeakAttackInput();
-                MeleeStrongAttackInput();
                 BlockingInput();
             }
             else
@@ -107,21 +105,6 @@ namespace Rpg.Character
                 }
                 character.animator.SetInteger("AttackID", meleeManager.GetAttackID());
                 character.animator.SetTrigger("WeakAttack");
-            }
-        }
-
-        /// <summary>
-        /// STRONG ATK INPUT
-        /// </summary>
-        protected virtual void MeleeStrongAttackInput()
-        {
-            if (character.animator == null)
-                return;
-
-            if (strongAttackInput.GetButtonDown())
-            {
-                character.animator.SetInteger("AttackID", meleeManager.GetAttackID());
-                character.animator.SetTrigger("StrongAttack");
             }
         }
 

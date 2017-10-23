@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebd61c02dc87b54f9b4a982a01423a1, type: 3}
   m_Name: Skill
   m_EditorClassIdentifier: 
-  warriorTypeSkill: 1
-  magicionTypeSkill: 0
-  archerTypeSkill: 0
-  description: 
+  skillofWariior: 1
+  skillofMagicion: 0
+  skillofArcher: 0
+  description: "\uB3CC\uBA74\uC11C \uC801\uC744 \uC4F8\uC5B4\uBC84\uB9BD\uB2C8\uB2E4."
   icon: {fileID: 0}

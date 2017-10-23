@@ -2,12 +2,12 @@
 using UnityEditor;
 public class Skill : ScriptableObject
 {
-
-    public WarriorTypeSkill warriorTypeSkill;
-    public MagicionTypeSkill magicionTypeSkill;
-    public ArcherTypeSkill archerTypeSkill;
+    public SkillofWariior skillofWariior;
+    public SkillofMagicion skillofMagicion;
+    public SkillofArcher skillofArcher;
     public string description;
     public Sprite icon;
+
     [MenuItem("Rpg/Skill/Create Skill")]
     static void CreateNewSkillData()
     {

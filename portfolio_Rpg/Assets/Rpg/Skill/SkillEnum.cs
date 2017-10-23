@@ -1,27 +1,16 @@
 ﻿
-public enum WarriorTypeSkill
+public enum SkillofWariior
 {
     None,
-    test2,
-    test3,
-    test4,
-    test5
+    Rotarycut
 }
 
-public enum MagicionTypeSkill
+public enum SkillofMagicion
 {
-    None,
-    test2,
-    test3,
-    test4,
-    test5
+    None
 }
 
-public enum ArcherTypeSkill
+public enum SkillofArcher
 {
-    None,
-    test2,
-    test3,
-    test4,
-    test5
+    None
 }

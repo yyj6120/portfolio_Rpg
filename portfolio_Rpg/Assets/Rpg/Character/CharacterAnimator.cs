@@ -42,14 +42,14 @@ namespace Rpg.Character
                 if (isStrafing)
                 {
                     if (strafeSpeed <= 0.5f)
-                        ControlSpeed(strafeWalkSpeed);               
+                        ControlSpeed(strafeWalkSpeed);
                     else if (strafeSpeed > 0.5f && strafeSpeed <= 1f)
-                        ControlSpeed(strafeRunningSpeed);               
-                    else                 
-                        ControlSpeed(strafeSprintSpeed);                  
+                        ControlSpeed(strafeRunningSpeed);
+                    else
+                        ControlSpeed(strafeSprintSpeed);
                 }
                 else if (!isStrafing)
-                {               
+                {
                     if (speed <= 0.5f)
                         ControlSpeed(freeWalkSpeed);
                     else if (speed > 0.5 && speed <= 1f)
