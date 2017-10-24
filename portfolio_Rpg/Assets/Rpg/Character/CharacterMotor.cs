@@ -26,14 +26,14 @@ namespace Rpg.Character
             }
         }
         public bool customAction;
-        public bool AttackAction;
+        public bool attackAction;
 
         [HideInInspector]
         public bool actions
         {
             get
             {
-                return landHigh || customAction || AttackAction;
+                return landHigh || customAction;
             }
         }
 
@@ -197,7 +197,6 @@ namespace Rpg.Character
         {
             CheckHealth();
             CheckGround();
-            CheckAttackDirection();
 
             ControlCapsuleHeight();
             ControlJumpBehaviour();
@@ -419,7 +418,7 @@ namespace Rpg.Character
                 v.y = rigidbody.velocity.y;
                 rigidbody.velocity = Vector3.Lerp(rigidbody.velocity, v, 20f * Time.deltaTime);
             }
-            else if (actions || customAction || AttackAction)
+            else if (actions || customAction || attackAction)
             {
                 this.velocity = velocity;
                 Vector3 v = Vector3.zero;
@@ -448,23 +447,23 @@ namespace Rpg.Character
             }
         }
 
-        public virtual void CheckAttackDirection()
-        {
-            if (AttackAction)
-            {
-                Vector3 lookDirection = attackDirection.normalized;
-                freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
-                var diferenceRotation = freeRotation.eulerAngles.y - transform.eulerAngles.y;
-                var eulerY = transform.eulerAngles.y;
-                if (isGrounded || (!isGrounded && jumpAirControl))
-                {
-                    if (diferenceRotation < 0 || diferenceRotation > 0)
-                        eulerY = freeRotation.eulerAngles.y;
-                    var euler = new Vector3(transform.eulerAngles.x, eulerY, transform.eulerAngles.z);
-                    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(euler), meleeAttackRotationSpeed * Time.deltaTime);
-                }
-            }
-        }
+        //public virtual void CheckAttackDirection()
+        //{
+        //    if (AttackAction)
+        //    {
+        //        Vector3 lookDirection = attackDirection.normalized;
+        //        freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
+        //        var diferenceRotation = freeRotation.eulerAngles.y - transform.eulerAngles.y;
+        //        var eulerY = transform.eulerAngles.y;
+        //        if (isGrounded || (!isGrounded && jumpAirControl))
+        //        {
+        //            if (diferenceRotation < 0 || diferenceRotation > 0)
+        //                eulerY = freeRotation.eulerAngles.y;
+        //            var euler = new Vector3(transform.eulerAngles.x, eulerY, transform.eulerAngles.z);
+        //            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(euler), meleeAttackRotationSpeed * Time.deltaTime);
+        //        }
+        //    }
+        //}
 
         public virtual void FreeMovement()
         {

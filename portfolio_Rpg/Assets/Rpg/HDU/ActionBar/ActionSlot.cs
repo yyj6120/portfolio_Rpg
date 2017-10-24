@@ -2,5 +2,5 @@
 
 public class ActionSlot : MonoBehaviour
 {
-    public Skill skill;
+    public Skill socket;
 }

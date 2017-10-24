@@ -25,15 +25,14 @@ public class MeleeAttackControl : StateMachineBehaviour
     public bool activeRagdoll;
     [Tooltip("Check true in the last attack of your combo to reset the triggers")]
     public bool resetAttackTrigger;
-    private bool isActive;
+    protected bool isActive;
     public bool debug;
-    private IMeleeFighter mFighter;
-    private bool isAttacking;
+    protected IMeleeFighter mFighter;
+    protected bool isAttacking;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         mFighter = animator.GetComponent<IMeleeFighter>();
-
         isAttacking = true;
         if (mFighter != null)
             mFighter.OnEnableAttack();
@@ -41,20 +40,13 @@ public class MeleeAttackControl : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Debug.Log("stateInfo.normalizedTime" + stateInfo.normalizedTime);
         if (stateInfo.normalizedTime % 1 >= startDamage && stateInfo.normalizedTime % 1 <= endDamage && !isActive)
         {
-            Debug.Log("stateInfo.normalizedTime" + stateInfo.normalizedTime);
-
-            if (debug)
-                Debug.Log(animator.name + " attack " + attackName + " enable damage in " + System.Math.Round(stateInfo.normalizedTime % 1, 2));
             isActive = true;
             ActiveDamage(animator, true);
         }
         else if (stateInfo.normalizedTime % 1 > endDamage && isActive)
         {
-            if (debug)
-                Debug.Log(animator.name + " attack " + attackName + " disable damage in " + System.Math.Round(stateInfo.normalizedTime % 1, 2));
             isActive = false;
             ActiveDamage(animator, false);
         }
@@ -85,7 +77,7 @@ public class MeleeAttackControl : StateMachineBehaviour
         if (debug) Debug.Log(animator.name + " attack " + attackName + " stateExit");
     }
 
-    void ActiveDamage(Animator animator, bool value)
+    protected void ActiveDamage(Animator animator, bool value)
     {
         var meleeManager = animator.GetComponent<MeleeManager>();
         if (meleeManager)

@@ -75,11 +75,6 @@ namespace Rpg.Character
             return false;
         }
 
-        //public void OnStateEnter()
-        //{
-
-        //}
-
         public void LayerControl()
         {
             
@@ -92,7 +87,7 @@ namespace Rpg.Character
             landHigh = baseLayerInfo.IsName("LandHigh");
             lockMovement = IsAnimatorTag("LockMovement");
             customAction = IsAnimatorTag("CustomAction");
-            AttackAction = IsAnimatorTag("Attack");
+            attackAction = IsAnimatorTag("Attack");
         }
 
         public void MatchTarget(Vector3 matchPosition, Quaternion matchRotation, AvatarTarget target, MatchTargetWeightMask weightMask, float normalisedStartTime, float normalisedEndTime)

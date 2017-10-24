@@ -9,10 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ebd61c02dc87b54f9b4a982a01423a1, type: 3}
-  m_Name: Skill
+  m_Name: ID1_360RightJumpSmash
   m_EditorClassIdentifier: 
-  skillofWariior: 1
+  skillofWariior: 2
   skillofMagicion: 0
   skillofArcher: 0
-  description: "\uB3CC\uBA74\uC11C \uC801\uC744 \uC4F8\uC5B4\uBC84\uB9BD\uB2C8\uB2E4."
+  description: 
   icon: {fileID: 0}
+  skillID: 1

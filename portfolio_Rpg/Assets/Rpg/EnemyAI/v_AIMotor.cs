@@ -255,7 +255,8 @@ public class v_AIMotor : Character
     {
         get
         {
-            if (target == null) return false;
+            if (target == null)
+                return false;
             var inFloor = Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, target.position.y, 0)) < distanceToAttack;
             return (inFloor && agressiveAtFirstSight && TargetDistance <= strafeDistance && !agent.isOnOffMeshLink);
         }
@@ -271,8 +272,10 @@ public class v_AIMotor : Character
                 return false;
             }
 
-            if (target == null || !agressiveAtFirstSight) return false;
-            if (currentState.Equals(AIStates.PatrolSubPoints)) return false;
+            if (target == null || !agressiveAtFirstSight)
+                return false;
+            if (currentState.Equals(AIStates.PatrolSubPoints))
+                return false;
 
             var inFloor = Vector3.Distance(new Vector3(0, transform.position.y, 0), new Vector3(0, target.position.y, 0)) < 1.5f;
             // exit strafe 

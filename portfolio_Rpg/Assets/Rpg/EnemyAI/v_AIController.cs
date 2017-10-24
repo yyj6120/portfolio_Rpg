@@ -37,7 +37,10 @@ public class v_AIController : v_AIAnimator, IMeleeFighter
             {
                 var vChar = sphereSensor.GetTargetvCharacter();
                 if (vChar != null && vChar.currentHealth > 0)
+                {
                     target = vChar.GetTransform;
+                    Debug.Log(target.position);
+                }
             }
 
             if (!CheckTargetIsAlive() || TargetDistance > distanceToLostTarget)
@@ -124,7 +127,10 @@ public class v_AIController : v_AIAnimator, IMeleeFighter
             yield return new WaitForSeconds(destinationRoutineIteration);
             CheckGroundDistance();
             if (agent.updatePosition)
+            {
+                Debug.Log(destination);
                 UpdateDestination(destination);
+            };
         }
     }
 
@@ -234,7 +240,8 @@ public class v_AIController : v_AIAnimator, IMeleeFighter
 
     protected IEnumerator Chase()
     {
-        while (currentHealth <= 0) yield return null;
+        while (currentHealth <= 0)
+            yield return null;
         // agent.speed = Mathf.Lerp(agent.speed, chaseSpeed, smoothSpeed * Time.deltaTime);
         agent.speed = chaseSpeed;
         agent.stoppingDistance = chaseStopDistance;
@@ -403,6 +410,7 @@ public class v_AIController : v_AIAnimator, IMeleeFighter
             agent.stoppingDistance = patrollingStopDistance;
             destination = startPosition;
         }
+
         if (canSeeTarget)
             currentState = AIStates.Chase;
     }

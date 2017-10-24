@@ -8,7 +8,7 @@ namespace Rpg.Character
     public class WariiorSkillController : SkillController
     {
         [System.Serializable]
-        public class OnSkill : UnityEvent<SkillofWariior> { }
+        public class OnSkill : UnityEvent<Skill> { }
         [HideInInspector]
         public OnSkill onSkill;
 
@@ -30,19 +30,15 @@ namespace Rpg.Character
 
         protected virtual void InputActionBar()
         {
-            for(int i = 0; i < actionSlot.Length; i++)
-                if(actionBarInput[i].GetButtonDown() && actionSlot[i].skill != null)
-                    onSkill.Invoke(actionSlot[i].skill.skillofWariior);            
+            for (int i = 0; i < actionSlot.Length; i++)
+                if (actionBarInput[i].GetButtonDown() && actionSlot[i].socket != null)
+                    onSkill.Invoke(actionSlot[i].socket);
         }
 
-        public void Register(SkillofWariior skillofWariior)
+        public void Register(Skill socket)
         {
-            if (SkillofWariior.Rotarycut == skillofWariior) { Rotarycut(); }
-        }
-
-        public void Rotarycut()
-        {
-            character.animator.SetTrigger("Rotarycut");
+            character.animator.SetInteger("SkillID", socket.skillID);
+            character.animator.SetTrigger("TriggerSkill");
         }
     }
 }

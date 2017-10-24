@@ -250,7 +250,8 @@ public class v_AIAnimator : v_AIMotor
     /// </summary>
     void MoveSetIDControl()
     {
-        if (meleeManager == null) return;
+        if (meleeManager == null)
+            return;
 
         animator.SetFloat("MoveSet_ID", meleeManager.GetMoveSetID());
     }

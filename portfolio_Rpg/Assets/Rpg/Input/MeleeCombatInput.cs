@@ -98,11 +98,6 @@ namespace Rpg.Character
 
             if (weakAttackInput.GetButtonDown())
             {
-                RaycastHit hit;
-                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, clickMoveLayer))
-                {
-                    AttackPoint = hit.point;
-                }
                 character.animator.SetInteger("AttackID", meleeManager.GetAttackID());
                 character.animator.SetTrigger("WeakAttack");
             }

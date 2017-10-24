@@ -7,6 +7,7 @@ public class Skill : ScriptableObject
     public SkillofArcher skillofArcher;
     public string description;
     public Sprite icon;
+    public int skillID;
 
     [MenuItem("Rpg/Skill/Create Skill")]
     static void CreateNewSkillData()
