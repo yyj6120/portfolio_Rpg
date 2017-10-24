@@ -128,7 +128,6 @@ public class v_AIController : v_AIAnimator, IMeleeFighter
             CheckGroundDistance();
             if (agent.updatePosition)
             {
-                Debug.Log(destination);
                 UpdateDestination(destination);
             };
         }
