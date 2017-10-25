@@ -10,10 +10,11 @@ public class OnAIHitEnter : UnityEvent<AIHitInfo> { }
 
 public class AIAttackObject : MonoBehaviour
 {
+    [HideInInspector]
+    public AIManager aiManager;
     public int movesetID;
     public float distanceToAttack;
     public int attackID;
-    public AIManager aiManager;
     public Damage damage;
     public List<AIHitBox> hitBoxes;
     public int damageModifier;
@@ -82,11 +83,6 @@ public class AIAttackObject : MonoBehaviour
             /// Damage Conditions
             if ((_hitProperties.hitDamageTags.Contains(other.tag)))
                 inDamage = true;
-            else
-            {
-                Debug.Log("에네미 Inspector에 tag를 설정해주세요.");
-            }
-            
 
             if (inDamage)
             {

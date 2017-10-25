@@ -447,24 +447,6 @@ namespace Rpg.Character
             }
         }
 
-        //public virtual void CheckAttackDirection()
-        //{
-        //    if (AttackAction)
-        //    {
-        //        Vector3 lookDirection = attackDirection.normalized;
-        //        freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
-        //        var diferenceRotation = freeRotation.eulerAngles.y - transform.eulerAngles.y;
-        //        var eulerY = transform.eulerAngles.y;
-        //        if (isGrounded || (!isGrounded && jumpAirControl))
-        //        {
-        //            if (diferenceRotation < 0 || diferenceRotation > 0)
-        //                eulerY = freeRotation.eulerAngles.y;
-        //            var euler = new Vector3(transform.eulerAngles.x, eulerY, transform.eulerAngles.z);
-        //            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(euler), meleeAttackRotationSpeed * Time.deltaTime);
-        //        }
-        //    }
-        //}
-
         public virtual void FreeMovement()
         {
             speed = Mathf.Abs(input.x) + Mathf.Abs(input.y);

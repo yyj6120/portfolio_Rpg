@@ -9,6 +9,7 @@ public class AIManager : MonoBehaviour
     #region SeralizedProperties in CustomEditor
     public Damage defaultDamage = new Damage(10);
     public HitProperties hitProperties;
+    [HideInInspector]
     public AIAttackObject aiAttackObject;
     public OnAIHitEvent onDamageHit, onRecoilHit;
     #endregion
@@ -32,6 +33,11 @@ public class AIManager : MonoBehaviour
     protected virtual void Init()
     {
         fighter = gameObject.GetMeleeFighter();
+        if(this.aiAttackObject == null)
+        {
+            this.aiAttackObject = GetComponentInChildren<AIAttackObject>();
+        }
+
         var attackObject = this.aiAttackObject.GetComponent<AIAttackObject>();
 
         attackObject.aiManager = this;

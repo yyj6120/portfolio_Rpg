@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: ff19b9108c0b3fe4493a5c1a6d7d8563
-timeCreated: 1507686128
-licenseType: Free
+guid: 38d65cd73263d43e8a2a0b945f3917b9
+labels:
+- fantasy
+- monster
+- pack
+- charater
+- ent
+timeCreated: 1459213010
+licenseType: Store
 NativeFormatImporter:
-  mainObjectFileID: 100100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
